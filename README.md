@@ -11,20 +11,20 @@ varname: fieldnames of the structure
 n: for loop index (use n = 1 to save noniterative data or to define fieldname for the first time and save data. n must be an positive integer)
 varargin: data to be structed, Variable-length input argument
 
-
-****** Output variable
+-----
+Output variable
 
 structed: structed data of loopVal
 
-
-****** Caution
+-----
+Caution
 
 nvars and the size of varargin, and varname must be the same
 n IS NOT the index of parfor loop
 must define fieldname before save date (read description of input variable n)
 
-
-****** How to use & Example
+-----
+How to use & Example
 
 parfor loopVar = initVal:endVal
     structed = [];                                                % 1. make empty structure inside parfor loop
@@ -35,7 +35,7 @@ parfor loopVar = initVal:endVal
     result(loopVar) = structed;                                   % 3. combine structed of each parfor loop to one result structure
 end
 
------------------------------------------------------------------
+-----
 parfor loop condition: initVal = 1, endVal = 3
 for loop condition: n_end = 5
 
