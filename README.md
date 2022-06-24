@@ -2,7 +2,8 @@ Returns for loop data within parfor loop to a structure.
 
 [structed] = parstruct(structed,nvars,varname,n,varargin)
 
-****** Input variables
+-----
+Input variables
 
 structed: name of the structure
 nvars: number of input variables
